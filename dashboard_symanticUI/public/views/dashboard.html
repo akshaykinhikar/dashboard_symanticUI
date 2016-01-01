@@ -1,3 +1,21 @@
+<style>
+	.c100.dark:after {
+		background-color: #D4D4D5;
+	}
+
+	.c100.dark > span {
+		color: #767676;
+	}
+
+	.c100.dark:hover > span {
+		color: #2185d0;
+	}
+
+	.c100.dark .bar, .c100.dark .fill {
+		border-color: #FBBD08 !important;
+	}
+
+</style>
 <div class="container-fluid">
 	<div class="container" style="max-width: 1300px;">
 
@@ -8,10 +26,33 @@
 					<div class="panel-heading">
 						<h3 class="panel-title">Panel title</h3>
 					</div>
-					<div class="panel-body">
+					<div class="panel-body" style="background: #4D5756; color: #fff;">
 						<div class="row">
-							<div class="col-sm-4 clearfix" ng-repeat="i in [1,2,3]" style="text-align: center; margin: 30px 0px;">
-								<div class="c100 p{{75}}" style="float: none; display: inline-block;">
+							<div class="col-sm-4 clearfix" style="text-align: center; margin: 30px 0px;">
+								<div class="c100 p{{75}} dark" style="float: none; display: inline-block;">
+									<span>75°C</span>
+									<div class="slice">
+										<div class="bar"></div>
+										<div class="fill"></div>
+									</div>
+								</div>
+								<h4 style="font-weight: bold;">Temperature</h4>
+
+								<!-- <div id="gauge" class="200x160px" style="color: #fff;float: none; display: inline-block; position: none;"> -->
+
+							</div>
+							<div class="col-sm-4 clearfix" style="text-align: center; margin: 30px 0px;">
+								<div class="c100 p{{75}} dark" style="float: none; display: inline-block;">
+									<span>75%</span>
+									<div class="slice">
+										<div class="bar"></div>
+										<div class="fill"></div>
+									</div>
+								</div>
+								<h4 style="font-weight: bold;">Speed Capacity</h4>
+							</div>
+							<div class="col-sm-4 clearfix" style="text-align: center; margin: 30px 0px;">
+								<div class="c100 p{{75}} dark" style="float: none; display: inline-block;">
 									<span>75%</span>
 									<div class="slice">
 										<div class="bar"></div>
@@ -43,17 +84,17 @@
 
 
 		<div class="row">
-			<div class="col-sm-6 col-lg-4" style="margin-bottom: 30px;">
+			<div class="col-sm-12 col-md-6" style="margin-bottom: 30px;">
 				<div class="" style=" border: 1px solid #aaa; padding: 10px; border-radius: 5px;">
 					<div id="tabContainer" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 				</div>
 			</div>
-			<div class="col-sm-6 col-lg-4" style="margin-bottom: 30px;">
+			<div class="col-sm-12 col-md-6" style="margin-bottom: 30px;">
 				<div class="" style=" border: 1px solid #aaa; padding: 10px; border-radius: 5px;">
 					<div id="tabContainer1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 				</div>
 			</div>
-			<div class="col-sm-6 col-lg-4" style="margin-bottom: 30px;">
+			<div class="col-sm-12 col-md-6" style="margin-bottom: 30px;">
 				<div class="" style=" border: 1px solid #aaa; padding: 10px; border-radius: 5px;">
 					<div id="tabContainer2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 				</div>

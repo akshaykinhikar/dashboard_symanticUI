@@ -15,6 +15,14 @@ angular.module('app.controllers', [])
 	};
 	$('.ui.dropdown').dropdown();
 
+	// var g = new JustGage({
+ //    id: "gauge",
+ //    value: 75,
+ //    min: 0,
+ //    max: 100,
+ //    // title: "Temprature Capacity"
+ //  });
+
 	$('#lineChartContainer').highcharts({
 		title: {
 			text: 'Monthly Average Temperature',
