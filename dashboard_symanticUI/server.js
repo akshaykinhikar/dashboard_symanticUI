@@ -24,16 +24,16 @@ app.use('/api',api);
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/login',function(req,res){
-	res.sendFile(__dirname + '/public/loginApp/html/loginIndex.html');
-})
+// app.get('/login',function(req,res){
+// 	res.sendFile(__dirname + '/public/loginApp/html/loginIndex.html');
+// })
 
-app.get('/home/progress',function(req,res){
-	res.sendFile(__dirname + '/public/under_construction/underConstruction.html');
-})
+// app.get('/home/progress',function(req,res){
+// 	res.sendFile(__dirname + '/public/under_construction/underConstruction.html');
+// })
 
-app.get('/home',function(req,res){
-	res.sendFile(__dirname + '/public/views/index.html');
+app.get('*',function(req,res){
+	res.sendFile(__dirname + '/public/index.html');
 });
 
 app.listen(config.port, function(err){
