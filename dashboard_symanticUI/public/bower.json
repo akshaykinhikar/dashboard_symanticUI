@@ -19,6 +19,7 @@
     "semantic": "~2.1.7",
     "angular": "~1.4.8",
     "angular-ui-router": "~0.2.15",
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "highcharts": "~4.2.1"
   }
 }
