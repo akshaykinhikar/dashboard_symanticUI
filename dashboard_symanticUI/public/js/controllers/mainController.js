@@ -1,16 +1,21 @@
 angular.module('app.controllers', [])
-.controller('mainControllerCtrl', function($scope){
+.controller('mainControllerCtrl', function($scope, $timeout){
 
 
-	$('.ui.dropdown').dropdown();
+
+	$scope.init = function(){
+
+	};
+	$timeout($scope.init);
 
 	$scope.toggleSidebar = function(){
 		$('.ui.labeled.icon.sidebar')
 			.sidebar('toggle')
 		;
 	};
+	$('.ui.dropdown').dropdown();
 
-	$(function () {
+	// $(function () {
     $('#lineChartContainer').highcharts({
         title: {
             text: 'Monthly Average Temperature',
@@ -57,5 +62,5 @@ angular.module('app.controllers', [])
             data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
         }]
     });
-});
+// });
 });
