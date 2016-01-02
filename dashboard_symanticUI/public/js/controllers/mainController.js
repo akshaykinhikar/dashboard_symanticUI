@@ -2,6 +2,13 @@ angular.module('app.controllers', [])
 .controller('mainControllerCtrl', function($scope, $timeout){
 	console.log('mainControllerCtrl is Loaded');
 
+	$scope.toggleSidebar = function(){
+		$('.ui.labeled.icon.sidebar')
+			.sidebar('toggle')
+		;
+	};
+	$('.ui.dropdown').dropdown();
+
 })
 
 .controller('dashboardCtrl', function($scope, $timeout){
@@ -13,12 +20,6 @@ angular.module('app.controllers', [])
 	};
 	$timeout($scope.init);
 
-	$scope.toggleSidebar = function(){
-		$('.ui.labeled.icon.sidebar')
-			.sidebar('toggle')
-		;
-	};
-	$('.ui.dropdown').dropdown();
 
 	// var g = new JustGage({
  //    id: "gauge",
