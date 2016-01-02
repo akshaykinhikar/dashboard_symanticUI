@@ -45,20 +45,25 @@
   background: #232D37;
   color: #FFF;
 }
-.user_registrationForm .custom_input_registrationForm_user {
+.user_registrationForm .form_bg_clr {
+  background-color: #FFF;
+  color: #404952;
+  padding: 10px;
+}
+.user_registrationForm .form_bg_clr .custom_input_registrationForm_user {
   border-color: #cccccc !important;
   height: 50px;
   box-shadow: none;
 }
-.user_registrationForm .custom_input_registrationForm_user:hover {
+.user_registrationForm .form_bg_clr .custom_input_registrationForm_user:hover {
   border-color: #2b93d8 !important;
   box-shadow: 1px solid #FFF!important;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(225, 225, 225, 0.6) !important;
 }
-.user_registrationForm .custom_input_registrationForm_user:focus {
+.user_registrationForm .form_bg_clr .custom_input_registrationForm_user:focus {
   border-color: #2b93d8 !important;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(225, 225, 225, 0.6) !important;
 }
-.user_registrationForm .input_margin_top {
+.user_registrationForm .form_bg_clr .input_margin_top {
   margin-top: 10px;
 }
