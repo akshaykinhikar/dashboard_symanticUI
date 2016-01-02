@@ -17,6 +17,11 @@ angular.module('app', ['app.controllers', 'ui.router'])
 		url: '/register',
 		templateUrl: './views/registationForm.html'
 		// controller: 'dashboardCtrl'
+	})
+	.state('login', {
+		url: '/login',
+		templateUrl: './views/login.html'
+		// controller: 'dashboardCtrl'
 	});
 
 	$urlRouterProvider.otherwise('/deviceList');
