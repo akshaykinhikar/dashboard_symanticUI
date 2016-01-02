@@ -3,12 +3,17 @@ angular.module('app', ['app.controllers', 'ui.router'])
 
 	$stateProvider
 
+	.state('deviceList', {
+		url: '/deviceList',
+		templateUrl: './views/deviceList.html',
+		controller: 'deviceListCtrl'
+	})
 	.state('dashboard', {
 		url: '/dashboard',
 		templateUrl: './views/dashboard.html',
-		controller: 'mainControllerCtrl'
+		controller: 'dashboardCtrl'
 	});
 
-	$urlRouterProvider.otherwise('/dashboard');
+	$urlRouterProvider.otherwise('/deviceList');
 
 });
