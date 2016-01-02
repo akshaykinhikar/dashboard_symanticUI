@@ -1,0 +1,64 @@
+.mixin_primary_btn {
+  background-color: #338ffc;
+  border: 1px solid #338ffc;
+  color: #FFF;
+}
+.mixin_primary_btn:hover {
+  background-color: #5ea3fc;
+  border: 1px solid #338ffc;
+  color: #FFF;
+}
+.mixin_cover_img {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.mixin_input_border_color {
+  border-color: #cccccc !important;
+  height: 50px;
+  box-shadow: none;
+}
+.mixin_input_border_color:hover {
+  border-color: #2b93d8 !important;
+  box-shadow: 1px solid #FFF!important;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(225, 225, 225, 0.6) !important;
+}
+.mixin_input_border_color:focus {
+  border-color: #2b93d8 !important;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(225, 225, 225, 0.6) !important;
+}
+.textarea_border_color {
+  border-color: #cccccc !important;
+  box-shadow: none;
+}
+.textarea_border_color:hover {
+  border-color: #2b93d8 !important;
+  box-shadow: 1px solid #FFF!important;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(225, 225, 225, 0.6) !important;
+}
+.textarea_border_color:focus {
+  border-color: #2b93d8 !important;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(225, 225, 225, 0.6) !important;
+}
+.body_masterIndex {
+  background: #232D37;
+  color: #FFF;
+}
+.user_registrationForm .custom_input_registrationForm_user {
+  border-color: #cccccc !important;
+  height: 50px;
+  box-shadow: none;
+}
+.user_registrationForm .custom_input_registrationForm_user:hover {
+  border-color: #2b93d8 !important;
+  box-shadow: 1px solid #FFF!important;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(225, 225, 225, 0.6) !important;
+}
+.user_registrationForm .custom_input_registrationForm_user:focus {
+  border-color: #2b93d8 !important;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(225, 225, 225, 0.6) !important;
+}
+.user_registrationForm .input_margin_top {
+  margin-top: 10px;
+}
